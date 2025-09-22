@@ -1,11 +1,11 @@
 ---
-title: "Joshua"
+title: "Joshua Klotzkin Home Page"
 layout: homelay
 excerpt: "Allan Lab at Leiden University &rarr; LMU."
 sitemap: false
 permalink: /
 ---
 
-**Hi Robin**
+**Joshua Klotzkin**
 
-I have figured out how to modify the text within the webpages, but you need to give me specific instructions on what you want displayed and how you want it displayed.
+I have a computer science major with a minor in game design
