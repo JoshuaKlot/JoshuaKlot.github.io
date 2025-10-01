@@ -17,6 +17,6 @@ I went to Vestal High School and started to improve my programming skills after 
 </p>
 
 
-<p style="font-size:8px">
+<p style="font-size:16px">
   If my website interests you contact me using my email joshklotzkin@gmail.com
 </p>
