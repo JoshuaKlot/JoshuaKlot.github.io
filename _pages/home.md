@@ -8,7 +8,7 @@ permalink: /
 <h1>My Portfolio</h1>
 <p style="font-size:20px">
   <img src="images/JoshImage.png" alt="A picture of me" style="float:right;width:50%;height:50%;">
-I've been interested in video games for almost my entire life, basically since playing Putt Putt Saves the Zoo on Windows XP. Especially after getting the Nintendo Wii and playing Super Mario Galaxy, I was really interested in making my own video games. I went to a lot of game design clubs that introduced me to Scratch and other logic based programing languages, before taking Unity classes and classes on other game engines in high school and college. Nowadays I mostly improve my game design skills by doing whatever game jams is popular on itch.io . I love doing a wide variety of genres such as  2D Platformer, Rail shooter, FPS and Turn based RPGs.
+I've been interested in video games for almost my entire life, basically since playing Putt Putt Saves the Zoo on Windows XP. Especially after getting the Nintendo Wii and playing Super Mario Galaxy, I was really interested in making my own video games. I went to a lot of game design clubs that introduced me to Scratch and other logic based programing languages, before taking Unity classes and classes on other game engines in high school and college. Nowadays I mostly improve my game design skills by doing whatever game jams is popular on itch.io. I love doing a wide variety of genres such as  2D Platformer, Rail shooter, FPS and Turn based RPGs.
  
 </p>
 
