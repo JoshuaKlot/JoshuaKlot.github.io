@@ -5,6 +5,7 @@ excerpt: "Allan Lab at Leiden University &rarr; LMU."
 sitemap: false
 permalink: /
 ---
+<body style="background-color:#d9d9d9;">
 <h1>My Portfolio</h1>
 <p style="font-size:20px">
   <img src="images/JoshImage.png" alt="A picture of me" style="float:right;width:50%;height:50%;">
@@ -17,4 +18,4 @@ I've been interested in video games for almost my entire life, basically since p
 <p style="font-size:20px"> 
 I went to Vestal High School and started to improve my programming skills after going to SUNY Oneonta and taking some classes there. I left for SUNY Polytechnic to pursue more game design opportunities. I was able to get a game design minor, join a game design club featuring like minded students, and even go to GDC which was a very cool experience for someone my age. Right now I'm currently working towards a masters at Binghamton University while looking for a more permanent job.
 </p>
-
+</body>
