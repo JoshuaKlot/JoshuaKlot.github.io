@@ -1,25 +1,24 @@
-
 <div id="footer" class="panel">
   <div class="panel-footer">
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-4">
           <p>Check out my professional experience on 
-            <a href="https://www.linkedin.com/in/joshua-klotzkin/">
+            <a href="https://www.linkedin.com/in/joshua-klotzkin/" class="social-link">
               <img src="images/linkedin.png" alt="linkedin" width="225" height="75">
             </a>
           </p>
         </div>
         <div class="col-sm-4">
           <p>Look at my coding projects on 
-            <a href="https://github.com/JoshuaKlot">
+            <a href="https://github.com/JoshuaKlot" class="social-link">
               <img src="images/github.png" alt="github" width="175" height="75">
             </a>
           </p>
         </div>
         <div class="col-sm-4">
           <p>Check out my gaming projects at 
-            <a href="https://juklok.itch.io/">
+            <a href="https://juklok.itch.io/" class="social-link">
               <img src="images/itch.png" alt="itch" width="200" height="60">
             </a>
           </p>
@@ -33,6 +32,27 @@
         </div>
       </div>
     </div>
+  </div>
+</div>
+
+<style>
+  .social-link {
+    display: inline-block;
+    transition: opacity 0.3s ease;
+  }
+  
+  .social-link:hover {
+    opacity: 0.7;
+  }
+  
+  .social-link img {
+    transition: filter 0.3s ease;
+  }
+  
+  .social-link:hover img {
+    filter: brightness(0.7);
+  }
+</style>
   </div>
 </div>
 
