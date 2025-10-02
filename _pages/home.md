@@ -25,20 +25,33 @@ In my free time i enjoy making my own video games using Unity, Godot, Unreal Eng
 <p class ="fade-in">I've also worked on my fair share of non gaming, programming related projects</p> 
 </body>
 <style>
-.fade-in {
-	opacity: 1;
-	animation-name: fadeInOpacity;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-	animation-duration: 2s;
-}
-
-@keyframes fadeInOpacity {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-</style>
+    .fade-in {
+      opacity: 1;
+      animation-name: fadeInOpacity;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-in;
+      animation-duration: 2s;
+    }
+    
+    @keyframes fadeInOpacity {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    
+    p {
+      margin-bottom: 20px;
+    }
+    
+    h1 {
+      margin-top: 70px;
+      margin-bottom: 10px;
+    }
+    
+    h1.fade-in:first-of-type {
+      margin-top: 0;
+    }
+  </style>
