@@ -1,4 +1,4 @@
-<html>
+
 ---
 title: "Joshua Klotzkin Home Page"
 layout: textlay
@@ -7,11 +7,7 @@ sitemap: false
 permalink: /
 ---
 
-<head>
-.fade-in {
-            animation: fadeIn 1s ease-in;
-        }
-</head>
+
 <body>
             <p class ="fade-in" style="font-size:70px">FUCK </p>
 <h1 class ="fade-in">My Portfolio</h1>
