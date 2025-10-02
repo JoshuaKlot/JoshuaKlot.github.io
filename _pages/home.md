@@ -9,7 +9,6 @@ permalink: /
 
 
 <body>
-            <p class ="fade-in" style="font-size:70px">FUCK </p>
 <h1 class ="fade-in">My Portfolio</h1>
 <p class ="fade-in" style="font-size:20px">
   <img src="images/JoshImage.png" alt="A picture of me" style="float:right;width:50%;height:50%;">
