@@ -5,7 +5,7 @@ excerpt: "Allan Lab at Leiden University &rarr; LMU."
 sitemap: false
 permalink: /
 ---
-<h1>My Portfolio</h1>
+<h1 animation: fadeIn 1s ease-in>My Portfolio</h1>
 <p style="font-size:20px">
   <img src="images/JoshImage.png" alt="A picture of me" style="float:right;width:50%;height:50%;">
 I've been interested in video games for almost my entire life, basically since playing Putt Putt Saves the Zoo on Windows XP. Especially after getting the Nintendo Wii and playing Super Mario Galaxy, I was really interested in making my own video games. I went to a lot of game design clubs that introduced me to Scratch and other logic based programing languages, before taking Unity classes and classes on other game engines in high school and college.
