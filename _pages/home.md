@@ -24,3 +24,21 @@ In my free time i enjoy making my own video games using Unity, Godot, Unreal Eng
 <h1 class ="fade-in">Projects</h1>
 <p class ="fade-in">I've also worked on my fair share of non gaming, programming related projects</p> Can you give me some more pizzazz with my website. Maybe have the paragraphs farther apart and have the scroll from left to right as the user scrolls up and down
 </body>
+<style>
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+</style>
