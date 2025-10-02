@@ -1,3 +1,4 @@
+<html>
 ---
 title: "Joshua Klotzkin Home Page"
 layout: textlay
@@ -5,7 +6,7 @@ excerpt: "Allan Lab at Leiden University &rarr; LMU."
 sitemap: false
 permalink: /
 ---
-<html>
+
 <head>
 .fade-in {
             animation: fadeIn 1s ease-in;
