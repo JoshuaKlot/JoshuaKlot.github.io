@@ -1,4 +1,3 @@
-
 ---
 title: "Joshua Klotzkin Home Page"
 layout: textlay
