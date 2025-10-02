@@ -5,6 +5,7 @@ excerpt: "Allan Lab at Leiden University &rarr; LMU."
 sitemap: false
 permalink: /
 ---
+<html>
 <head>
 .fade-in {
             animation: fadeIn 1s ease-in;
@@ -27,3 +28,4 @@ In my free time i enjoy making my own video games using Unity, Godot, Unreal Eng
 <h1 class ="fade-in">Projects</h1>
 <p class ="fade-in">I've also worked on my fair share of non gaming, programming related projects</p> Can you give me some more pizzazz with my website. Maybe have the paragraphs farther apart and have the scroll from left to right as the user scrolls up and down
 </body>
+</html>
