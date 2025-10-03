@@ -21,13 +21,13 @@ I went to Vestal High School and started to improve my programming skills after 
 </p>
 </div>
 <div class="fade-in">
-<h1>Games</h1>
+<h2>Games</h2>
 <p style="font-size:20px"> 
 In my free time i enjoy making my own video games using Unity, Godot, Unreal Engine, C#, C++ , Java and so on, and publishing them on itch.io to compete in game jams or grow my own skills. Im always experimenting with new genres and technology, in order to best set myself up with anything I may need in the future. I was even able to working in a group with some of them which was really great. You can see a "best of" on my website here or click the link at the bottom to go straight to my itch page.
 </p>
 </div>
 <div class="fade-in">
-<h1>Projects</h1>
+<h2>Projects</h2>
 <p>I've also worked on my fair share of non gaming, programming related projects</p> 
 
 </div>
@@ -48,7 +48,7 @@ In my free time i enjoy making my own video games using Unity, Godot, Unreal Eng
       margin-bottom: 20px;
     }
     
-    h1 {
+    h2 {
       margin-top: 400px;
       margin-bottom: 10px;
     }
