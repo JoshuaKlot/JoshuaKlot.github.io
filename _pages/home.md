@@ -41,7 +41,7 @@ In my free time i enjoy making my own video games using Unity, Godot, Unreal Eng
       transition-delay:0s
     }
 
-    .fade-in:open{
+    .fade-in:target-current{
       opacity: 1;
     }
 
