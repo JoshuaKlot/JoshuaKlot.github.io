@@ -53,7 +53,7 @@ In my free time i enjoy making my own video games using Unity, Godot, Unreal Eng
       margin-bottom: 10px;
     }
     
-    h1.fade-in:first-of-type {
+    h1:first-of-type {
       margin-top: 0;
     }
   </style>
