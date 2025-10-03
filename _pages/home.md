@@ -47,7 +47,7 @@ In my free time i enjoy making my own video games using Unity, Godot, Unreal Eng
     }
     
     h1 {
-      margin-top: 70px;
+      margin-top: 400px;
       margin-bottom: 10px;
     }
     
