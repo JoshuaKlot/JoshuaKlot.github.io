@@ -33,18 +33,16 @@ In my free time i enjoy making my own video games using Unity, Godot, Unreal Eng
 </body>
 </div>
 <style>
-    .fade-in {
-      opacity: 0;
-      transition-property:opacity;
-      transition-duration:1s;
-      transition-timing-function: ease;
-      transition-delay:0s
-    }
-
-    .fade-in:target-current{
-      opacity: 1;
-    }
-
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
     
     p {
       margin-bottom: 20px;
@@ -59,3 +57,24 @@ In my free time i enjoy making my own video games using Unity, Godot, Unreal Eng
       margin-top: 0;
     }
   </style>
+
+  <script>
+  // Create an Intersection Observer
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, {
+    threshold: 0.1, // Trigger when 10% of element is visible
+    rootMargin: '0px' // Adjust this to trigger earlier/later
+  });
+  
+  // Observe all elements with fade-in class
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.fade-in').forEach(el => {
+      observer.observe(el);
+    });
+  });
+</script>
