@@ -65,6 +65,9 @@ In my free time i enjoy making my own video games using Unity, Godot, Unreal Eng
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
       }
+      else{
+        entry.target.classList.remove('visible');
+      }
     });
   }, {
     threshold: 0.1, // Trigger when 10% of element is visible
