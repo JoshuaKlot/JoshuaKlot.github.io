@@ -15,10 +15,7 @@ permalink: /games/
     <style>
         body {
             font-family: Arial, sans-serif;
-            max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
-            background-color: #f5f5f5;
         }
 
         h1 {
@@ -43,7 +40,7 @@ permalink: /games/
 
         .games-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+            grid-template-columns: repeat(auto-fit, minmax(500px, 2fr));
             gap: 30px;
             margin-bottom: 40px;
         }
