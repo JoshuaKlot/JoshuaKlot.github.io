@@ -1,5 +1,5 @@
 ---
-title: "Allan Lab - Team"
+title: "Joshua Klotzkin - Games"
 layout: gridlay
 excerpt: "Joshua Klotzkin: Games"
 sitemap: false
@@ -43,13 +43,12 @@ permalink: /games/
 
         .games-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
             gap: 30px;
             margin-bottom: 40px;
         }
 
         .game-card {
-            background: white;
             border-radius: 10px;
             padding: 20px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -58,8 +57,7 @@ permalink: /games/
 
         .game-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-        }
+            }
 
         .game-card iframe {
             width: 100%;
