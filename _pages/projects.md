@@ -6,40 +6,40 @@ sitemap: false
 permalink: /projects
 ---
 
-# This page is my personal projects as well as my previous employment/internship experience
+<title>My previous employment/internship experience and project</title>
 
 <div class="fade-in">
-  <p style="font-size:20px">
+<p style="font-size:20px">
 **Security System with Raspberry PI, Research Project at Vestal, NY from December 2024-Present**
 - Worked with a professor at Binghamton University on a project with group of networked Raspberry Pi
 - Project goal is to create a security system with facial recognition
 - Connected a motion sensor and a camera that would activate on detection
 - Use machine learning to develop robust facial recognition system
-  </p>
+</p>
 </div>
 <div class="fade-in">
-    <p style="font-size:20px">
+<p style="font-size:20px">
 **Binghamton ITS, Software Engineer Intern at Binghamton, NY from June 2024 - August 2024**
 - Developed and maintained a SQL database that mapped students' majors to their corresponding courses
 - Implemented web pages on the Binghamton University website using integrated custom APIs written in C and C++ to fetch and display data from the SQL database
 - Converted the Bash scripts into Python using Visual Studio to modernize and future-proof database refresh processes, increasing efficiency
-    </p>
+</p>
 </div>
 <div class="fade-in">
-    <p style="font-size:20px">
+<p style="font-size:20px">
 **Binghamton ITS, Software Engineer Intern at Binghamton, NY from June 2024 - August 2024**
 - Developed and maintained a SQL database that mapped students' majors to their corresponding courses
 - Implemented web pages on the Binghamton University website using integrated custom APIs written in C and C++ to fetch and display data from the SQL database
 - Converted the Bash scripts into Python using Visual Studio to modernize and future-proof database refresh processes, increasing efficiency
-    </p>
+</p>
 </div>
 <div class="fade-in">
-    <p style="font-size:20px">
+<p style="font-size:20px">
 **AMAG Nanometro, Software Engineer Consultant at Albany, NY from Dec 2022 - August 2024**
 - Created Java GUI to add feature identification in SEM (scanning electron microscope) images
 - Automated pattern generation by writing scripts that iterated through image data, utilized Blender's Python API to create custom panels, and optimized visualization through efficient looping techniques
 - Integrated features into SimuSEM software package and used GitHub for collaboration and version control
-    </p>
+</p>
 </div>
 <div class ="fade-in">
 <p style="font-size:20px">
