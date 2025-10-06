@@ -6,7 +6,7 @@ sitemap: false
 permalink: /projects
 ---
 
-<title>My previous employment/internship experience and project</title>
+<h1>My previous employment/internship experience and project</h1>
 
 <div class="fade-in">
 <p style="font-size:20px">
@@ -52,10 +52,9 @@ permalink: /projects
 </div>
 <div class="fade-in">
 <p style = "font-size:20px">
-**Door Motion Sensor, Research Project **
+**Door Motion Sensor, Research Project**
 - Uses a raspberry Pi as a security system
 - When the door opens the Pi will put the exact time on the AWS blockchain  
-
 </p>
 </div>
 
