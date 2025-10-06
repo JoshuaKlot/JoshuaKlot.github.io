@@ -1,9 +1,9 @@
 ---
-title: "Allan Lab - Vacancies"
+title: "Joshua Klotzkin - Projects"
 layout: textlay
 excerpt: "Openings"
 sitemap: false
-permalink: /vacancies
+permalink: /projects
 ---
 
 # Open positions
