@@ -25,14 +25,14 @@ I went to Vestal High School and started to improve my programming skills after 
 
 <h2>Games</h2>
 <p style="font-size:20px"> 
-In my free time i enjoy making my own video games using Unity, Godot, Unreal Engine, C#, C++ , Java and so on, and publishing them on itch.io to compete in game jams or grow my own skills. Im always experimenting with new genres and technology, in order to best set myself up with anything I may need in the future. I was even able to working in a group with some of them which was really great. You can see a "best of" on my website here or click the link at the bottom to go straight to my itch page.
+In my free time i enjoy making my own video games using Unity, Godot, Unreal Engine, C#, C++ , Java and so on, and publishing them on itch.io to compete in game jams or grow my own skills. Im always experimenting with new genres and technology, in order to best set myself up with anything I may need in the future. I was even able to working in a group with some of them which was really great. You can see a "best of" on my website <a href="https://joshuaklot.github.io/games/">here</a> or click the link at the bottom to go straight to my itch.io page.
 </p>
 </div>
 </div>
 
 <div class="fade-in">
 <h2>Projects</h2>
-<p style="font-size:20px">I've also worked on my fair share of non gaming, programming related projects, such as making these websites for other people (and myself), using machine learning to detect faces on a raspberry pi, and making an edge detection GUI. Those projects can also be viewed here.</p> 
+<p style="font-size:20px">I've also worked on my fair share of non gaming, programming related projects, such as making these websites for other people (and myself), using machine learning to detect faces on a raspberry pi, and making an edge detection GUI. Those projects can also be viewed <a href="https://joshuaklot.github.io/projects">here.</a>a></p> 
 </div>
 </body>
 <style>
