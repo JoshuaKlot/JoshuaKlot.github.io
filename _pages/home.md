@@ -1,7 +1,7 @@
 ---
 title: "Joshua Klotzkin Home Page"
 layout: textlay
-excerpt: "Allan Lab at Leiden University &rarr; LMU."
+excerpt: "Joshua Klotzkin's Website homepage"
 sitemap: false
 permalink: /
 ---
