@@ -33,7 +33,7 @@ permalink: /games/
 
         .games-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
             gap: 30px;
             margin-bottom: 40px;
         }
@@ -85,7 +85,7 @@ permalink: /games/
         </div>
         
         <div class="game-card">
-            <iframe frameborder="0" src="https://itch.io/embed/2161439?border_width=5&amp;bg_color=904b00&amp;fg_color=e10029&amp;link_color=9a0000" width="216" height="175"><a href="https://juklok.itch.io/the-lava-is-floor">The Lava is Floor by Juklok</a></iframe>                <a href="https://juklok.itch.io/magical-magnifier">Magical Magnifier by Juklok</a>
+            <iframe frameborder="0" src="https://itch.io/embed/2901981?border_width=5&amp;bg_color=44ff24&amp;link_color=00b1c3" width="216" height="175"><a href="https://juklok.itch.io/magical-magnifier">Magical Magnifier by Juklok</a></iframe>The Lava is Floor by Juklok</a></iframe>                <a href="https://juklok.itch.io/magical-magnifier">Magical Magnifier by Juklok</a>
             <p>Magical Magnifier was a game made for GMTK's 2024 game jam. The theme was Built to Scale so my idea was a platformer where you can grow and shrink blocks to platform and push them across water.</p>
         </div>
     </div>
