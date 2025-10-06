@@ -64,7 +64,7 @@ permalink: /projects
       .project-title {
         font-weight: bold;
         font-size: 20px;
-        margin-top:60px;
+        margin-top: 75px;
         color: #2c3e50;
     }
     
@@ -73,9 +73,6 @@ permalink: /projects
         padding-left: 20px;
     }
     
-    .project-title:first-of-type {
-      margin-top: 0;
-    }
   </style>
 
   <script>
