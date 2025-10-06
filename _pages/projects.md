@@ -8,8 +8,6 @@ permalink: /projects
 
 
 <h1>My previous employment/internship experience and projects</h1>
-<p>FUCKKKKKKKKKKKKKKKKKKKKKKKKKKK
-</p>
 <div class="fade-in">
 <div class="project-title">Security System with Raspberry PI, Research Project at Vestal, NY from December 2024-Present
 </div>
@@ -62,20 +60,16 @@ permalink: /projects
     transform: translateY(0);
   }
     
-    p {
-      margin-bottom: 50px;
-    }
     
       .project-title {
         font-weight: bold;
         font-size: 20px;
-        margin-top:50px;
+        margin-top:60px;
         color: #2c3e50;
     }
     
     .project-detail {
         font-size: 18px;
-        margin-bottom: 12px;
         padding-left: 20px;
     }
     
