@@ -44,7 +44,7 @@ permalink: /projects
         <p class="project-detail">Uses a raspberry Pi as a security system</p>
         <p class="project-detail">When the door opens the Pi will put the exact time on the AWS blockchain</p>
     </div>
-
+</body>
 <style>
   .fade-in {
     transform: translateX(-200px);
