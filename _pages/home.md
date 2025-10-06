@@ -37,13 +37,11 @@ In my free time i enjoy making my own video games using Unity, Godot, Unreal Eng
 </body>
 <style>
   .fade-in {
-    opacity: 0;
-    transform: translateY(20px);
+    transform: translateX(200px);
     transition: opacity 1s ease, transform 1s ease;
   }
   
   .fade-in.visible {
-    opacity: 1;
     transform: translateY(0);
   }
     
