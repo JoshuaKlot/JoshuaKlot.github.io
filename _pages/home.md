@@ -32,7 +32,7 @@ In my free time i enjoy making my own video games using Unity, Godot, Unreal Eng
 
 <div class="fade-in">
 <h2>Projects</h2>
-<p style="font-size:20px">I've also worked on my fair share of non gaming, programming related projects, such as making these websites for other people (and myself), using machine learning to detect faces on a raspberry pi, and making an edge detection GUI. Those projects can also be viewed <a href="https://joshuaklot.github.io/projects">here.</a>a></p> 
+<p style="font-size:20px">I've also worked on my fair share of non gaming, programming related projects, such as making these websites for other people (and myself), using machine learning to detect faces on a raspberry pi, and making an edge detection GUI. Those projects can also be viewed <a href="https://joshuaklot.github.io/projects">here.</a></p> 
 </div>
 </body>
 <style>
