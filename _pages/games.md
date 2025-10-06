@@ -12,6 +12,11 @@ permalink: /games/
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Games</title>
     <style>
+
+          
+        game-card.visible {
+            transform: translateX(0);
+          }
         body {
             font-family: Arial, sans-serif;
             margin: 0 auto;
@@ -39,6 +44,8 @@ permalink: /games/
         }
 
         .game-card {
+            transform: translateX(200px);
+            transition: opacity 1s ease, transform 1s ease;
             border-radius: 10px;
             padding: 20px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
