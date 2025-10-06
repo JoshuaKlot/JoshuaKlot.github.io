@@ -44,7 +44,7 @@ permalink: /games/
         }
 
         .game-card {
-            transform: translateX(200px);
+            transform: translateX(400px);
             transition: opacity 1s ease, transform 1s ease;
             border-radius: 10px;
             padding: 20px;
