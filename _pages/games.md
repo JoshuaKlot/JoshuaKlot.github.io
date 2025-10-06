@@ -14,9 +14,6 @@ permalink: /games/
     <style>
 
           
-        game-card.visible {
-            transform: translateX(0);
-          }
         body {
             font-family: Arial, sans-serif;
             margin: 0 auto;
@@ -44,7 +41,6 @@ permalink: /games/
         }
 
         .game-card {
-            transform: translateX(400px);
             transition: opacity 1s ease, transform 1s ease;
             border-radius: 10px;
             padding: 20px;
