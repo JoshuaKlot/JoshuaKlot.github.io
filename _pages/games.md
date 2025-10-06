@@ -100,7 +100,11 @@ permalink: /games/
             <p>Magical Magnifier was a game made for GMTK's 2024 game jam. The theme was Built to Scale so my idea was a platformer where you can grow and shrink blocks to platform and push them across water. The game has a bit of a physics system as the smaller the box is the further it will be pushed.</p>
             <p> Programs used: Unity, C#, beepbox, Aseprite</p>
         </div>
-
+        <div class="game-card">
+<iframe frameborder="0" src="https://itch.io/embed/3836636?bg_color=af703a&amp;fg_color=68f9ff&amp;link_color=179d00&amp;border_color=000000" width="552" height="167"><a href="https://juklok.itch.io/extreme-gambling">Extreme Gambling by Juklok</a></iframe>  
+            <p>Extreme Gambling was a game made for GMTK's 2025 game jam. The theme was Risk It for a Biscuit so my idea was a game that combine both mountain climbing and gambling, 2 very risky activities. The player had stamina they could gamble with as at any time, while the made the trek up the dangerous mountain.</p>
+            <p> Programs used: Godot, GDscript(a form of Python), beepbox, Aseprite</p>
+        </div>
     </div>
 </body>
 </html>
