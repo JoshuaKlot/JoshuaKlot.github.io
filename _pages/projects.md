@@ -54,6 +54,7 @@ permalink: /projects
   .fade-in {
     transform: translateX(-600px);
     transition: transform 1s ease;
+    margin-bottom: 50px;
   }
   
   .fade-in.visible {
@@ -68,7 +69,6 @@ permalink: /projects
         font-weight: bold;
         font-size: 20px;
         margin-top:50px;
-        margin-bottom:50px;
         color: #2c3e50;
     }
     
