@@ -8,7 +8,8 @@ permalink: /projects
 
 
 <h1>My previous employment/internship experience and projects</h1>
-
+<p>FUCKKKKKKKKKKKKKKKKKKKKKKKKKKK
+</p>
 <div class="fade-in">
 <div class="project-title">Security System with Raspberry PI, Research Project at Vestal, NY from December 2024-Present
 </div>
