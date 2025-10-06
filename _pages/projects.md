@@ -68,7 +68,7 @@ permalink: /projects
         font-weight: bold;
         font-size: 20px;
         margin-top:50px;
-        margin-bottom: 15px;
+        margin-bottom:50px;
         color: #2c3e50;
     }
     
