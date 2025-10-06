@@ -57,4 +57,48 @@ permalink: /projects
 - When the door opens the Pi will put the exact time on the AWS blockchain  
 </p>
 </div>
+<style>
+  .fade-in {
+    transform: translateX(200px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  
+  .fade-in.visible {
+    transform: translateY(0);
+  }
+    
+    p {
+      margin-bottom: 50px;
+    }
+    
 
+    
+    h1:first-of-type {
+      margin-top: 0;
+      margin-bottom:50px
+    }
+  </style>
+
+  <script>
+  // Create an Intersection Observer
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+      else{
+        entry.target.classList.remove('visible');
+      }
+    });
+  }, {
+    threshold: 0.1, // Trigger when 10% of element is visible
+    rootMargin: '0px' // Adjust this to trigger earlier/later
+  });
+  
+  // Observe all elements with fade-in class
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.fade-in').forEach(el => {
+      observer.observe(el);
+    });
+  });
+</script>
