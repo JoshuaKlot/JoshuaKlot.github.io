@@ -6,7 +6,7 @@ sitemap: false
 permalink: /projects
 ---
 
-<h1>My previous employment/internship experience and project</h1>
+<h1>My previous employment/internship experience and projects</h1>
 
 <div class="fade-in">
 <p style="font-size:20px">
