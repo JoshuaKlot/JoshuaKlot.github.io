@@ -52,8 +52,8 @@ permalink: /projects
 
 <style>
   .fade-in {
-    transform: translateX(-6000px);
-    transition: opacity 1s ease, transform 1s ease;
+    transform: translateX(-600px);
+    transition: transform 1s ease;
   }
   
   .fade-in.visible {
