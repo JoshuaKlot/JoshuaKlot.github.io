@@ -1,7 +1,7 @@
 ---
 title: "Joshua Klotzkin - Projects"
 layout: textlay
-excerpt: "Openings"
+excerpt: "Projects"
 sitemap: false
 permalink: /projects
 ---
