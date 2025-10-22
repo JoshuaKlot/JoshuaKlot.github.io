@@ -11,10 +11,13 @@ permalink: /projects
 <div class="fade-in">
 <div class="project-title">Security System with Raspberry PI, Research Project at Vestal, NY from December 2024-Present
 </div>
-<p class="project-detail">-Worked with a professor at Binghamton University on a project with group of networked Raspberry Pi</p>
-<p class="project-detail">-Project goal is to create a security system with facial recognition</p>
-<p class="project-detail">-Connected a motion sensor and a camera that would activate on detection</p>
+<p class="project-detail">-Designed and implemented  a video security system that is resistant to ‘replay’ attacks in live video streams and integrates multiple cameras and Raspberry Pi
+</p>
+<p class="project-detail">-Use machine learning to develop robust facial recognition system which could recognize specific individuals passing in the frame with 80% accuracy</p>
+<p class="project-detail">Implemented motion detection to reduce computational load on the Raspberry Pis
+</p>
 <p class="project-detail">-Use machine learning to develop robust facial recognition system</p>
+<p class="project-detail">- Worked with Professor Yu Chen at Binghamton University</p>
 </div>
 
 <div class="fade-in">
