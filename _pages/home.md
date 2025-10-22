@@ -50,7 +50,7 @@ In my free time i enjoy making my own video games using Unity, Godot, Unreal Eng
     }
     
     h2 {
-      margin-top: 200px;
+      margin-top: 50px;
       margin-bottom: 10px;
     }
     
