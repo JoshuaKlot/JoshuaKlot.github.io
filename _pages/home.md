@@ -17,7 +17,7 @@ I have a Bacholer's degree in computer science and minor in Game Design from Sun
   </div>
 <div class="fade-in">
 <p style="font-size:20px"> 
-I went to Vestal High School and started to improve my programming skills after going to SUNY Oneonta and taking some classes there. I left for SUNY Polytechnic to pursue more game design opportunities. I was able to get a game design minor, join a game design club featuring like minded students, and even go to GDC which was a very cool experience for someone my age. Right now I'm currently working towards a masters at Binghamton University while looking for a more permanent job.
+I started to improve my programming skills after going to SUNY Oneonta and taking some classes there, such as Data Structure, Algebra III, and Object Oriented Programming. I left for SUNY Polytechnic to pursue more game design opportunities. I was able to get a game design minor, join a game design club featuring like minded students, and even go to GDC which was a very cool experience for someone my age. Right now I'm currently working towards a masters at Binghamton University while looking for a more permanent job.
 </p>
 </div>
 <div style="background-color:light-blue">
