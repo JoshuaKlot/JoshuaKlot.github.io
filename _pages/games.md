@@ -111,6 +111,11 @@ permalink: /games/
             <p>Extreme Gambling was a game made for GMTK's 2025 game jam. The theme was Risk It for a Biscuit so my idea was a game that combine both mountain climbing and gambling, 2 very risky activities. The player had stamina they could gamble with as at any time, while the made the trek up the dangerous mountain.</p>
             <p> Programs used: Godot, GDscript(a form of Python), beepbox, Aseprite</p>
         </div>
+        <div class="game-card">
+<iframe frameborder="0" src="https://itch.io/embed/3989047?bg_color=05872c&amp;fg_color=ffad11&amp;link_color=ff9e1b&amp;border_color=000000" width="552" height="167"><a href="https://juklok.itch.io/jack-os-defence">Jack O's Defence by Juklok</a></iframe>
+            <p>Jack O Defence was a mobile game I made for the Halloweeen season. Made mostly out of a desired to make something short and simple that I can easily show off</p>
+            <p> Programs used: Godot, GDscript(a form of Python), beepbox, Aseprite</p>
+        </div>
     </div>
 </body>
 </html>
