@@ -1,4 +1,10 @@
-<!DOCTYPE html>
+---
+title: "Joshua Klotzkin - Games"
+layout: gridlay
+excerpt: "Joshua Klotzkin: Games"
+sitemap: false
+permalink: /games/
+---
 <html lang="en">
 <head>
     <meta charset="UTF-8">
