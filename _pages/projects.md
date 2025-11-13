@@ -20,6 +20,15 @@ permalink: /projects
 <p class="project-detail">- Worked with Professor Yu Chen at Binghamton University</p>
 </div>
 
+
+<div class="fade-in">
+<div class="project-title">Cloud Computing Software Project,  NY from October 2024 - Present
+</div>
+<p class="project-detail">-Made a multiplayer gaame for class on Unity to demonstrate cloud computing</p>
+<p class="project-detail">-The game inolve players being able to place objects down on their own screen in order to be collected by other players<p>
+<p class="project-detail">-I decided to expand the project into a full game that could be played over the internet</p>
+</div>
+
 <div class="fade-in">
 <div class="project-title">Binghamton ITS, Software Engineer Intern at Binghamton, NY from June 2024 - August 2024
 </div>
@@ -48,7 +57,7 @@ permalink: /projects
 <div class="fade-in">
 <div class="project-title">Door Motion Sensor, Research Project
 </div>
-<p class="project-detail">-Uses a raspberry Pi as a security system</p>
+<p class="project-detail">-Uses a Raspberry Pi as a security system</p>
 <p class="project-detail">-When the door opens the Pi will put the exact time on the AWS blockchain</p>
 </div>
 
