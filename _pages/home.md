@@ -25,7 +25,7 @@ I started to improve my programming skills after going to SUNY Oneonta and takin
 
 <h2>Games</h2>
 <p style="font-size:20px"> 
-In my free time i enjoy making my own video games using Unity, Godot, Unreal Engine, C#, C++ , Java and so on, and publishing them on itch.io to compete in game jams or grow my own skills. Im always experimenting with new genres and technology, in order to best set myself up with anything I may need in the future. I was even able to working in a group with some of them which was really great. You can see a "best of" on my website <a href="https://joshuaklot.github.io/games/">here</a> or click the link at the bottom to go straight to my itch.io page.
+In my free time i enjoy making my own video games using Unity, Godot, Unreal Engine, C#, C++ , Java, Python and so on, and publishing them on itch.io to compete in game jams or grow my own skills. I'm always experimenting with new genres and technology, in order to best set myself up with anything I may need in the future. I was even able to work in a group with some of them which was really great. You can see a "best of" on my website <a href="https://joshuaklot.github.io/games/">here</a> or click the link at the bottom to go straight to my itch.io page.
 </p>
 </div>
 </div>
