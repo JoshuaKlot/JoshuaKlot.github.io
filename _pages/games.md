@@ -116,6 +116,9 @@ permalink: /games/
             <p>Jack O Defence was a mobile game I made for the Halloweeen season. Made mostly out of a desired to make something short and simple that I can easily show off</p>
             <p> Programs used: Godot, GDscript(a form of Python), beepbox, Aseprite</p>
         </div>
+        <div class="game-card">
+            <iframe frameborder="0" src="https://itch.io/embed/4027135?bg_color=5a33a8&amp;fg_color=000000&amp;link_color=362626" width="552" height="167"><a href="https://juklok.itch.io/lost-in-incantation">Lost in Incantation by Juklok, Yousurname, SuperGamerDude182, Absence2090</a></iframe>
+            <p> Lost in Incantation was a game I collaborated on with several other people in Binghamton's GDG. This was by far, my most successful colloborative effort.</p>
     </div>
 </body>
 </html>
