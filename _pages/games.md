@@ -34,7 +34,7 @@ permalink: /games/
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
             gap: 30px;
-            margin-bottom: 40px;
+            margin-bottom: 100px;
         }
 
         .game-card {
