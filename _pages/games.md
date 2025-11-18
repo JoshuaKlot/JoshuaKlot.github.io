@@ -77,7 +77,6 @@ permalink: /games/
     <h1>My Game Portfolio</h1>
     <p style="font-size:20px"> I've been interested in video games for almost my entire life, basically since playing Putt Putt Saves the Zoo on Windows XP. Especially after getting the Nintendo Wii and playing Super Mario Galaxy, I was really interested in making my own video games. I went to a lot of game design clubs that introduced me to Scratch and other logic based programing languages, before taking Unity classes and classes on other game engines in high school and college.
     </p>
-    <p class="intro">Fuck. These are video games I have made in my free time and published on itch.io. They were made with a variety of Game Engines and coding languages.</p>
     
     <h2>Games</h2>
     
@@ -124,5 +123,7 @@ permalink: /games/
                 <p> Programs used: Unity, C#, beepbox, Aseprite</p>
             </div>
         </div>
+        <p class="intro">These are video games I have made in my free time and published on itch.io. They were made with a variety of Game Engines and coding languages.</p>
+
 </body>
 </html>
