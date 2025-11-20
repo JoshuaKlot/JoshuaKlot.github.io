@@ -66,7 +66,7 @@ permalink: /games/
         <p class="intro">These are video games I have made in my free time and published on itch.io. They were made with a variety of Game Engines and coding languages.</p>
 
 </body>
-</html>
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -129,3 +129,4 @@ permalink: /games/
         }
     </style>
      
+</html> 
