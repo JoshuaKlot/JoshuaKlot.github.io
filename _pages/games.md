@@ -3,7 +3,7 @@ title: "Joshua Klotzkin - Games"
 layout: gridlay
 excerpt: "Joshua Klotzkin: Games"
 sitemap: false
-permalink: /games/
+permalink: /games
 ---
 <html lang="en">
 <head>
