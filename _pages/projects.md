@@ -25,7 +25,7 @@ permalink: /projects
 <div class="project-title">Cloud Computing Software Project,  NY from October 2024 - Present
 </div>
 <p class="project-detail">-Made a multiplayer gaame for class on Unity to demonstrate cloud computing</p>
-<p class="project-detail">-The game inolve players being able to place objects down on their own screen in order to be collected by other players<p>
+<p class="project-detail">-The game inolve players being able to place objects down on their own screen in order to be collected by other players</p>
 <p class="project-detail">-I decided to expand the project into a full game that could be played over the internet</p>
 </div>
 
