@@ -1,14 +1,14 @@
----
-title: "Joshua Klotzkin - Games"
-layout: textlay
-excerpt: "Joshua Klotzkin: Game Search"
-sitemap: false
-permalink: /game_search
----
-
-
+<!DOCTYPE html>
 <html lang="en">
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Recommendations</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
 <body>
     <div id="root"></div>
     
@@ -88,7 +88,7 @@ permalink: /game_search
                                     role: "user",
                                     content: `Based on these games the user enjoys: ${filledGames.join(', ')}
 
-Please analyze the genres, themes, and game modes of these games and recommend 10 similar games from IGDB that they would likely enjoy. Avoid recommending games from the same franchise as what they entered.
+Please analyze the genres, themes, and game modes of these games and recommend 10 similar games from IGDB that they would likely enjoy. Avoid recommending games from the same franchises
 
 For each recommendation, provide:
 - name: The game title
@@ -121,26 +121,26 @@ Return ONLY valid JSON with no preamble or markdown formatting. Use this exact s
             };
 
             return (
-                <div className="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900 p-6">
+                <div className="min-h-screen bg-white p-6">
                     <div className="max-w-6xl mx-auto">
                         <div className="text-center mb-12">
-                            <h1 className="text-5xl font-bold text-white mb-4 flex items-center justify-center gap-3">
-                                <Sparkles className="w-12 h-12" />
+                            <h1 className="text-5xl font-bold text-gray-800 mb-4 flex items-center justify-center gap-3">
+                                <Sparkles className="w-12 h-12 text-purple-600" />
                                 Game Recommendations
                             </h1>
-                            <p className="text-gray-200 text-lg">Enter 5 games you love, and we'll find 10 more you'll enjoy!</p>
+                            <p className="text-gray-600 text-lg">Enter 5 games you love, and we'll find 10 more you'll enjoy!</p>
                         </div>
 
-                        <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 mb-8 shadow-2xl border border-white/20">
-                            <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
-                                <Gamepad2 className="w-6 h-6" />
+                        <div className="bg-gray-50 rounded-2xl p-8 mb-8 shadow-lg border border-gray-200">
+                            <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-2">
+                                <Gamepad2 className="w-6 h-6 text-purple-600" />
                                 Your Favorite Games
                             </h2>
                             
                             <div className="space-y-4 mb-6">
                                 {inputGames.map((game, index) => (
                                     <div key={index} className="flex gap-2">
-                                        <div className="flex-shrink-0 w-8 h-12 bg-purple-500 rounded-lg flex items-center justify-center font-bold text-white">
+                                        <div className="flex-shrink-0 w-8 h-12 bg-purple-600 rounded-lg flex items-center justify-center font-bold text-white">
                                             {index + 1}
                                         </div>
                                         <input
@@ -148,7 +148,7 @@ Return ONLY valid JSON with no preamble or markdown formatting. Use this exact s
                                             value={game}
                                             onChange={(e) => handleGameInput(index, e.target.value)}
                                             placeholder={`Game ${index + 1}`}
-                                            className="flex-1 px-4 py-3 bg-white/20 border-2 border-white/30 rounded-lg text-white placeholder-gray-300 focus:outline-none focus:border-purple-400 focus:bg-white/30 transition-all"
+                                            className="flex-1 px-4 py-3 bg-white border-2 border-gray-300 rounded-lg text-gray-800 placeholder-gray-400 focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-200 transition-all"
                                         />
                                         {game && (
                                             <button
@@ -165,7 +165,7 @@ Return ONLY valid JSON with no preamble or markdown formatting. Use this exact s
                             <button
                                 onClick={fetchRecommendations}
                                 disabled={loading}
-                                className="w-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 disabled:from-gray-500 disabled:to-gray-600 text-white font-bold py-4 px-6 rounded-lg transform transition-all hover:scale-105 active:scale-95 shadow-lg flex items-center justify-center gap-2"
+                                className="w-full bg-purple-600 hover:bg-purple-700 disabled:bg-gray-400 text-white font-bold py-4 px-6 rounded-lg transform transition-all hover:scale-105 active:scale-95 shadow-lg flex items-center justify-center gap-2"
                             >
                                 <Search className="w-5 h-5" />
                                 {loading ? 'Finding Games...' : 'Get Recommendations'}
@@ -174,35 +174,35 @@ Return ONLY valid JSON with no preamble or markdown formatting. Use this exact s
 
                         {loading && (
                             <div className="text-center py-12">
-                                <div className="inline-block animate-spin rounded-full h-16 w-16 border-4 border-purple-400 border-t-transparent"></div>
-                                <p className="text-white mt-4 text-lg">Analyzing your preferences...</p>
+                                <div className="inline-block animate-spin rounded-full h-16 w-16 border-4 border-purple-600 border-t-transparent"></div>
+                                <p className="text-gray-700 mt-4 text-lg">Analyzing your preferences...</p>
                             </div>
                         )}
 
                         {error && (
-                            <div className="bg-red-500/20 border-2 border-red-400 rounded-lg p-6 text-center mb-8">
-                                <p className="text-red-200 text-lg">{error}</p>
+                            <div className="bg-red-50 border-2 border-red-400 rounded-lg p-6 text-center mb-8">
+                                <p className="text-red-700 text-lg">{error}</p>
                             </div>
                         )}
 
                         {!loading && recommendations.length > 0 && (
                             <div>
-                                <h2 className="text-3xl font-bold text-white mb-6 text-center">
+                                <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">
                                     Recommended For You
                                 </h2>
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                     {recommendations.map((game, index) => (
                                         <div
                                             key={index}
-                                            className="bg-white/10 backdrop-blur-md rounded-xl p-6 hover:bg-white/20 transition-all hover:transform hover:scale-105 shadow-xl border border-white/20"
+                                            className="bg-white rounded-xl p-6 hover:shadow-xl transition-all hover:transform hover:scale-105 shadow-lg border-2 border-gray-200"
                                         >
                                             <div className="flex items-start justify-between mb-3">
-                                                <h3 className="text-xl font-bold text-white flex-1 pr-2">
+                                                <h3 className="text-xl font-bold text-gray-800 flex-1 pr-2">
                                                     {game.name}
                                                 </h3>
                                                 {game.rating && (
-                                                    <div className="bg-yellow-500 px-3 py-1 rounded-full">
-                                                        <span className="text-white font-bold text-sm">
+                                                    <div className="bg-yellow-400 px-3 py-1 rounded-full">
+                                                        <span className="text-gray-800 font-bold text-sm">
                                                             {Math.round(game.rating)}
                                                         </span>
                                                     </div>
@@ -210,7 +210,7 @@ Return ONLY valid JSON with no preamble or markdown formatting. Use this exact s
                                             </div>
                                             
                                             {game.release_year && (
-                                                <p className="text-gray-300 text-sm mb-3">
+                                                <p className="text-gray-600 text-sm mb-3">
                                                     Released: {game.release_year}
                                                 </p>
                                             )}
@@ -234,14 +234,14 @@ Return ONLY valid JSON with no preamble or markdown formatting. Use this exact s
                                             </div>
                                             
                                             {game.summary && (
-                                                <p className="text-gray-300 text-sm mb-3">
+                                                <p className="text-gray-700 text-sm mb-3">
                                                     {game.summary}
                                                 </p>
                                             )}
 
                                             {game.similarity_reason && (
-                                                <div className="bg-pink-500/30 border border-pink-400/50 rounded-lg p-3 mt-3">
-                                                    <p className="text-pink-100 text-sm italic">
+                                                <div className="bg-purple-50 border border-purple-300 rounded-lg p-3 mt-3">
+                                                    <p className="text-purple-900 text-sm italic">
                                                         <strong>Why you'll like it:</strong> {game.similarity_reason}
                                                     </p>
                                                 </div>
