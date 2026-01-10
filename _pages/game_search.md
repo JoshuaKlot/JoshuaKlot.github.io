@@ -6,17 +6,9 @@ sitemap: false
 permalink: /game_search
 ---
 
-<!DOCTYPE html>
+
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Recommendations</title>
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
+
 <body>
     <div id="root"></div>
     
@@ -96,7 +88,7 @@ permalink: /game_search
                                     role: "user",
                                     content: `Based on these games the user enjoys: ${filledGames.join(', ')}
 
-Please analyze the genres, themes, and game modes of these games and recommend 10 similar games from IGDB that they would likely enjoy. 
+Please analyze the genres, themes, and game modes of these games and recommend 10 similar games from IGDB that they would likely enjoy. Avoid recommending games from the same franchise as what they entered.
 
 For each recommendation, provide:
 - name: The game title
