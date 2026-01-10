@@ -5,8 +5,26 @@ excerpt: "Joshua Klotzkin: Game Search"
 sitemap: false
 permalink: /game_search
 ---
-<html>
-import React, { useState } from 'react';
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div id="root"></div>
+    
+    <script type="text/babel">
+        // Paste the entire React component code from the artifact here
+        const { useState } = React;
+        const { Search, Trash2, Sparkles, Gamepad2 } = lucide;
+        
+        import React, { useState } from 'react';
 import { Search, Trash2, Sparkles, Gamepad2 } from 'lucide-react';
 
 const GameRecommendations = () => {
@@ -225,4 +243,10 @@ Return ONLY valid JSON with no preamble or markdown formatting. Use this exact s
 };
 
 export default GameRecommendations;
+        
+        ReactDOM.render(<GameRecommendations />, document.getElementById('root'));
+    </script>
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+</body>
 </html>
