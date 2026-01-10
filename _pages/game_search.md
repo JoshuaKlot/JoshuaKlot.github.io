@@ -1,3 +1,10 @@
+---
+title: "Joshua Klotzkin - Games"
+layout: textlay
+excerpt: "Joshua Klotzkin: Game Search"
+sitemap: false
+permalink: /game_search
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
