@@ -147,10 +147,9 @@ permalink: /game_search
                 <div className="max-w-6xl mx-auto">
                     <div className="text-center mb-12">
                         <h1 className="text-5xl font-bold text-gray-800 mb-4 flex items-center justify-center gap-3">
-                            <Sparkles className="w-12 h-12 text-purple-600" />
                             Game Recommendations
                         </h1>
-                        <p className="text-gray-600 text-lg">Enter 5 games you love, and we'll find 10 more you'll enjoy!</p>
+                        <p className="text-gray-600 text-lg">Enter 5 games you love, and the site uses RAWG database to find 10 more you'll enjoy!</p>
                     </div>
 
                     <div className="bg-gray-50 rounded-2xl p-8 mb-8 shadow-lg border border-gray-200">
