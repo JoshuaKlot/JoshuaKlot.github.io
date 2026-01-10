@@ -5,7 +5,6 @@ excerpt: "Joshua Klotzkin: Game Search"
 sitemap: false
 permalink: /game_search
 ---
-
 <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -76,45 +75,67 @@ permalink: /game_search
             setError(null);
 
             try {
-                const response = await fetch("https://api.anthropic.com/v1/messages", {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json",
-                    },
-                    body: JSON.stringify({
-                        model: "claude-sonnet-4-20250514",
-                        max_tokens: 4000,
-                        messages: [
-                            {
-                                role: "user",
-                                content: `Based on these games the user enjoys: ${filledGames.join(', ')}
-
-Please analyze the genres, themes, and game modes of these games and recommend 10 similar games from IGDB that they would likely enjoy. Avoid recommending games from the same franchise as what they entered.
-
-For each recommendation, provide:
-- name: The game title
-- rating: IGDB rating (out of 100)
-- release_year: Year released
-- genres: Array of genre names
-- themes: Array of theme names
-- game_modes: Array of game mode names (e.g., "Single player", "Multiplayer", "Co-op")
-- summary: Brief description
-- similarity_reason: Why this game matches their preferences (one sentence)
-
-Return ONLY valid JSON with no preamble or markdown formatting. Use this exact structure:
-[{"name": "Game Name", "rating": 85, "release_year": 2023, "genres": ["Action", "RPG"], "themes": ["Fantasy"], "game_modes": ["Single player"], "summary": "Description", "similarity_reason": "Reason"}]`
-                            }
-                        ],
-                    })
+                // RAWG API - Free tier, no auth required for basic searches
+                const API_KEY = '4c8f33be150f45da9eb0fa51c0c0aab0'; // Public demo key
+                
+                // Search for each game to get genre information
+                const gamePromises = filledGames.map(async (gameName) => {
+                    const searchUrl = `https://api.rawg.io/api/games?key=${API_KEY}&search=${encodeURIComponent(gameName)}&page_size=1`;
+                    const response = await fetch(searchUrl);
+                    const data = await response.json();
+                    return data.results[0];
                 });
 
-                const data = await response.json();
-                const text = data.content.find(item => item.type === "text")?.text || "";
-                const cleanText = text.replace(/```json|```/g, "").trim();
-                const parsedGames = JSON.parse(cleanText);
-                setRecommendations(parsedGames);
+                const userGames = await Promise.all(gamePromises);
+                const validGames = userGames.filter(g => g);
+                
+                if (validGames.length === 0) {
+                    setError("Could not find information about the games you entered. Please try different game titles.");
+                    setLoading(false);
+                    return;
+                }
+
+                // Extract genres and tags from user's games
+                const genreIds = new Set();
+                const tagIds = new Set();
+                validGames.forEach(game => {
+                    game.genres?.forEach(g => genreIds.add(g.id));
+                    game.tags?.slice(0, 5).forEach(t => tagIds.add(t.id));
+                });
+
+                // Get recommendations based on genres
+                const genreList = Array.from(genreIds).join(',');
+                const recommendUrl = `https://api.rawg.io/api/games?key=${API_KEY}&genres=${genreList}&ordering=-rating&page_size=15`;
+                
+                const recResponse = await fetch(recommendUrl);
+                const recData = await recResponse.json();
+                
+                // Filter out games the user already entered
+                const inputGameNames = filledGames.map(g => g.toLowerCase());
+                const filtered = recData.results.filter(game => 
+                    !inputGameNames.some(inputName => 
+                        game.name.toLowerCase().includes(inputName) || 
+                        inputName.includes(game.name.toLowerCase())
+                    )
+                ).slice(0, 10);
+
+                // Format the recommendations
+                const formattedRecs = filtered.map(game => ({
+                    name: game.name,
+                    rating: game.rating ? Math.round(game.rating * 20) : null, // Convert 5-scale to 100-scale
+                    release_year: game.released ? new Date(game.released).getFullYear() : null,
+                    genres: game.genres?.map(g => g.name) || [],
+                    themes: game.tags?.slice(0, 3).map(t => t.name) || [],
+                    game_modes: game.tags?.filter(t => 
+                        ['Singleplayer', 'Multiplayer', 'Co-op', 'PvP'].includes(t.name)
+                    ).map(t => t.name) || [],
+                    summary: game.description_raw?.substring(0, 150) + '...' || 'No description available.',
+                    similarity_reason: `Shares ${game.genres?.map(g => g.name).join(', ')} elements with your favorite games.`
+                }));
+
+                setRecommendations(formattedRecs);
             } catch (err) {
-                setError("Failed to fetch recommendations. Please try again.");
+                setError("Failed to fetch recommendations. Please check your internet connection and try again.");
                 console.error(err);
             } finally {
                 setLoading(false);
