@@ -5,35 +5,38 @@ excerpt: "Joshua Klotzkin: Game Search"
 sitemap: false
 permalink: /game_search
 ---
+<html>
 import React, { useState } from 'react';
-import { Search, Star, Calendar, Users } from 'lucide-react';
+import { Search, Trash2, Sparkles, Gamepad2 } from 'lucide-react';
 
-const GameSearch = () => {
-  const [selectedGenre, setSelectedGenre] = useState(null);
-  const [games, setGames] = useState([]);
+const GameRecommendations = () => {
+  const [inputGames, setInputGames] = useState(['', '', '', '', '']);
+  const [recommendations, setRecommendations] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  // Common IGDB genre IDs
-  const genres = [
-    { id: 4, name: 'Fighting', color: 'bg-red-500' },
-    { id: 5, name: 'Shooter', color: 'bg-orange-500' },
-    { id: 7, name: 'Music', color: 'bg-purple-500' },
-    { id: 8, name: 'Platform', color: 'bg-blue-500' },
-    { id: 9, name: 'Puzzle', color: 'bg-green-500' },
-    { id: 10, name: 'Racing', color: 'bg-yellow-500' },
-    { id: 12, name: 'RPG', color: 'bg-indigo-500' },
-    { id: 13, name: 'Simulator', color: 'bg-teal-500' },
-    { id: 14, name: 'Sport', color: 'bg-lime-500' },
-    { id: 15, name: 'Strategy', color: 'bg-cyan-500' },
-    { id: 31, name: 'Adventure', color: 'bg-amber-500' },
-    { id: 33, name: 'Arcade', color: 'bg-rose-500' }
-  ];
+  const handleGameInput = (index, value) => {
+    const newGames = [...inputGames];
+    newGames[index] = value;
+    setInputGames(newGames);
+  };
 
-  const fetchGames = async (genreId, genreName) => {
+  const clearInput = (index) => {
+    const newGames = [...inputGames];
+    newGames[index] = '';
+    setInputGames(newGames);
+  };
+
+  const fetchRecommendations = async () => {
+    const filledGames = inputGames.filter(game => game.trim() !== '');
+    
+    if (filledGames.length === 0) {
+      setError("Please enter at least one game to get recommendations.");
+      return;
+    }
+
     setLoading(true);
     setError(null);
-    setSelectedGenre(genreName);
 
     try {
       const response = await fetch("https://api.anthropic.com/v1/messages", {
@@ -47,8 +50,22 @@ const GameSearch = () => {
           messages: [
             {
               role: "user",
-              content: `Please provide a JSON array of the top 20 ${genreName} games from IGDB. For each game include: name, rating (out of 100), release_year, and a brief summary. Return ONLY valid JSON with no preamble or markdown formatting. Use this exact structure:
-[{"name": "Game Name", "rating": 95, "release_year": 2023, "summary": "Brief description"}]`
+              content: `Based on these games the user enjoys: ${filledGames.join(', ')}
+
+Please analyze the genres, themes, and game modes of these games and recommend 10 similar games from IGDB that they would likely enjoy. 
+
+For each recommendation, provide:
+- name: The game title
+- rating: IGDB rating (out of 100)
+- release_year: Year released
+- genres: Array of genre names
+- themes: Array of theme names
+- game_modes: Array of game mode names (e.g., "Single player", "Multiplayer", "Co-op")
+- summary: Brief description
+- similarity_reason: Why this game matches their preferences (one sentence)
+
+Return ONLY valid JSON with no preamble or markdown formatting. Use this exact structure:
+[{"name": "Game Name", "rating": 85, "release_year": 2023, "genres": ["Action", "RPG"], "themes": ["Fantasy"], "game_modes": ["Single player"], "summary": "Description", "similarity_reason": "Reason"}]`
             }
           ],
         })
@@ -58,9 +75,9 @@ const GameSearch = () => {
       const text = data.content.find(item => item.type === "text")?.text || "";
       const cleanText = text.replace(/```json|```/g, "").trim();
       const parsedGames = JSON.parse(cleanText);
-      setGames(parsedGames);
+      setRecommendations(parsedGames);
     } catch (err) {
-      setError("Failed to fetch games. Please try again.");
+      setError("Failed to fetch recommendations. Please try again.");
       console.error(err);
     } finally {
       setLoading(false);
@@ -68,57 +85,81 @@ const GameSearch = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 p-6">
-      <div className="max-w-7xl mx-auto">
+    <div className="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900 p-6">
+      <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h1 className="text-5xl font-bold text-white mb-4 flex items-center justify-center gap-3">
-            <Search className="w-12 h-12" />
-            Game Search
+            <Sparkles className="w-12 h-12" />
+            Game Recommendations
           </h1>
-          <p className="text-gray-300 text-lg">Discover top games by genre from IGDB</p>
+          <p className="text-gray-200 text-lg">Enter 5 games you love, and we'll find 10 more you'll enjoy!</p>
         </div>
 
-        {/* Genre Buttons */}
-        <div className="mb-12">
-          <h2 className="text-2xl font-semibold text-white mb-6 text-center">Select a Genre</h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {genres.map((genre) => (
-              <button
-                key={genre.id}
-                onClick={() => fetchGames(genre.id, genre.name)}
-                className={`${genre.color} hover:opacity-90 text-white font-semibold py-4 px-6 rounded-lg transform transition-all hover:scale-105 active:scale-95 shadow-lg ${
-                  selectedGenre === genre.name ? 'ring-4 ring-white' : ''
-                }`}
-              >
-                {genre.name}
-              </button>
+        {/* Input Section */}
+        <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 mb-8 shadow-2xl border border-white/20">
+          <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+            <Gamepad2 className="w-6 h-6" />
+            Your Favorite Games
+          </h2>
+          
+          <div className="space-y-4 mb-6">
+            {inputGames.map((game, index) => (
+              <div key={index} className="flex gap-2">
+                <div className="flex-shrink-0 w-8 h-12 bg-purple-500 rounded-lg flex items-center justify-center font-bold text-white">
+                  {index + 1}
+                </div>
+                <input
+                  type="text"
+                  value={game}
+                  onChange={(e) => handleGameInput(index, e.target.value)}
+                  placeholder={`Game ${index + 1}`}
+                  className="flex-1 px-4 py-3 bg-white/20 border-2 border-white/30 rounded-lg text-white placeholder-gray-300 focus:outline-none focus:border-purple-400 focus:bg-white/30 transition-all"
+                />
+                {game && (
+                  <button
+                    onClick={() => clearInput(index)}
+                    className="flex-shrink-0 w-12 h-12 bg-red-500 hover:bg-red-600 rounded-lg flex items-center justify-center transition-colors"
+                  >
+                    <Trash2 className="w-5 h-5 text-white" />
+                  </button>
+                )}
+              </div>
             ))}
           </div>
+
+          <button
+            onClick={fetchRecommendations}
+            disabled={loading}
+            className="w-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 disabled:from-gray-500 disabled:to-gray-600 text-white font-bold py-4 px-6 rounded-lg transform transition-all hover:scale-105 active:scale-95 shadow-lg flex items-center justify-center gap-2"
+          >
+            <Search className="w-5 h-5" />
+            {loading ? 'Finding Games...' : 'Get Recommendations'}
+          </button>
         </div>
 
         {/* Loading State */}
         {loading && (
           <div className="text-center py-12">
-            <div className="inline-block animate-spin rounded-full h-16 w-16 border-4 border-purple-500 border-t-transparent"></div>
-            <p className="text-white mt-4 text-lg">Loading {selectedGenre} games...</p>
+            <div className="inline-block animate-spin rounded-full h-16 w-16 border-4 border-purple-400 border-t-transparent"></div>
+            <p className="text-white mt-4 text-lg">Analyzing your preferences...</p>
           </div>
         )}
 
         {/* Error State */}
         {error && (
-          <div className="bg-red-500/20 border-2 border-red-500 rounded-lg p-6 text-center">
+          <div className="bg-red-500/20 border-2 border-red-400 rounded-lg p-6 text-center mb-8">
             <p className="text-red-200 text-lg">{error}</p>
           </div>
         )}
 
-        {/* Games Grid */}
-        {!loading && games.length > 0 && (
+        {/* Recommendations */}
+        {!loading && recommendations.length > 0 && (
           <div>
             <h2 className="text-3xl font-bold text-white mb-6 text-center">
-              Top {selectedGenre} Games
+              Recommended For You
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {games.map((game, index) => (
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {recommendations.map((game, index) => (
                 <div
                   key={index}
                   className="bg-white/10 backdrop-blur-md rounded-xl p-6 hover:bg-white/20 transition-all hover:transform hover:scale-105 shadow-xl border border-white/20"
@@ -128,9 +169,8 @@ const GameSearch = () => {
                       {game.name}
                     </h3>
                     {game.rating && (
-                      <div className="flex items-center gap-1 bg-yellow-500 px-2 py-1 rounded-full">
-                        <Star className="w-4 h-4 text-white fill-white" />
-                        <span className="text-white font-semibold text-sm">
+                      <div className="bg-yellow-500 px-3 py-1 rounded-full">
+                        <span className="text-white font-bold text-sm">
                           {Math.round(game.rating)}
                         </span>
                       </div>
@@ -138,28 +178,45 @@ const GameSearch = () => {
                   </div>
                   
                   {game.release_year && (
-                    <div className="flex items-center gap-2 text-gray-300 mb-3">
-                      <Calendar className="w-4 h-4" />
-                      <span>{game.release_year}</span>
-                    </div>
+                    <p className="text-gray-300 text-sm mb-3">
+                      Released: {game.release_year}
+                    </p>
                   )}
+
+                  <div className="flex flex-wrap gap-2 mb-3">
+                    {game.genres && game.genres.map((genre, i) => (
+                      <span key={i} className="bg-blue-500 px-2 py-1 rounded text-white text-xs font-semibold">
+                        {genre}
+                      </span>
+                    ))}
+                    {game.themes && game.themes.map((theme, i) => (
+                      <span key={i} className="bg-purple-500 px-2 py-1 rounded text-white text-xs font-semibold">
+                        {theme}
+                      </span>
+                    ))}
+                    {game.game_modes && game.game_modes.map((mode, i) => (
+                      <span key={i} className="bg-green-500 px-2 py-1 rounded text-white text-xs font-semibold">
+                        {mode}
+                      </span>
+                    ))}
+                  </div>
                   
                   {game.summary && (
-                    <p className="text-gray-300 text-sm line-clamp-3">
+                    <p className="text-gray-300 text-sm mb-3">
                       {game.summary}
                     </p>
+                  )}
+
+                  {game.similarity_reason && (
+                    <div className="bg-pink-500/30 border border-pink-400/50 rounded-lg p-3 mt-3">
+                      <p className="text-pink-100 text-sm italic">
+                        <strong>Why you'll like it:</strong> {game.similarity_reason}
+                      </p>
+                    </div>
                   )}
                 </div>
               ))}
             </div>
-          </div>
-        )}
-
-        {/* Initial State */}
-        {!loading && !error && games.length === 0 && (
-          <div className="text-center py-12">
-            <Users className="w-24 h-24 text-purple-400 mx-auto mb-4 opacity-50" />
-            <p className="text-gray-400 text-xl">Select a genre to discover amazing games!</p>
           </div>
         )}
       </div>
@@ -167,4 +224,5 @@ const GameSearch = () => {
   );
 };
 
-export default GameSearch;
+export default GameRecommendations;
+</html>
