@@ -12,7 +12,7 @@ permalink: /
 <h1>My Portfolio</h1>
 <p style="font-size:20px">
   <img src="images/JoshImage.png" alt="A picture of me" style="float:right;width:50%;height:50%;">
-I have a Bacholer's degree in computer science and minor in Game Design from Suny Polytechic. I have taught myself a lot of skills in high school and those skills were only imporved upon when I went into college. I have lots of expirence in lots of different aspects of computer science and programming such as object oriented programming, embedded systems, artifical intelligence and machine learning thanks to my education.
+I have a Bacholer's degree in computer science and minor in Game Design from Suny Polytechic. I have lots of exprience in lots of different aspects of computer science and programming such as object oriented programming, embedded systems, artifical intelligence and machine learning thanks to my education. I have taught myself a lot of skills in high school and those skills were only improved upon when I went into college.
 </p>
   </div>
 <div class="fade-in">
