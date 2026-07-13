@@ -8,7 +8,7 @@ permalink: /
 
 <body>
   <div class="fade-in">
-<h1>This Weeks Featured Game</h1>
+<h1 style="display:block;margin:0 auto;margin-bottom:60px">This Weeks Featured Game</h1>
 <p style="font-size:20px">
   <img src="images/titleScreen.png" alt="titleScreen" style="display:block;margin:0 auto;width:50%;height:50%;">
 Robo Beat em Up was a game I created for Big mode's 2023 game jam, and even today I would still say its one of my more impressive projects to date. The theme of the game was Mode so my idea was a tower defense game with a single tower that could switch through multiple modes of defense
