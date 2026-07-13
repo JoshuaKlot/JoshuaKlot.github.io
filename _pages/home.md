@@ -9,10 +9,10 @@ permalink: /
 
 <body>
   <div class="fade-in">
-<h1>My Portfolio</h1>
+<h1>Featured Game</h1>
 <p style="font-size:20px">
-  <img src="images/JoshImage.png" alt="A picture of me" style="float:right;width:50%;height:50%;">
-I have a Bacholer's degree in computer science and minor in Game Design from Suny Polytechic. I have lots of exprience in lots of different aspects of computer science and programming such as object oriented programming, embedded systems, artifical intelligence and machine learning thanks to my education. I have taught myself a lot of skills in high school and those skills were only improved upon when I went into college.
+  <img src="images/titleScreen.png" alt="titleScreen" style="float:center;width:50%;height:50%;">
+Robo Beat em Up was a game I created for Big mode's 2023 game jam, and even today I would still say its one of my more impressive projects to date. The theme of the game was Mode so my idea was a tower defense game with a single tower that could switch through multiple modes of defense
 </p>
   </div>
 <div class="fade-in">
