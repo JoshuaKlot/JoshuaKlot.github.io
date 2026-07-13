@@ -1,4 +1,4 @@
----
+<img width="1917" height="1066" alt="image" src="https://github.com/user-attachments/assets/26d63ad4-c4d5-4c3d-9566-16444ebe8fb3" />---
 title: "Joshua Klotzkin Home Page"
 layout: textlay
 excerpt: "Joshua Klotzkin's Website homepage"
@@ -11,20 +11,16 @@ permalink: /
   <div class="fade-in">
 <h1>Featured Game</h1>
 <p style="font-size:20px">
-  <img src="images/titleScreen.png" alt="titleScreen" style="float:center;width:50%;height:50%;">
+  <img src="images/titleScreen.png" alt="titleScreen" style="float:right;width:50%;height:50%;">
 Robo Beat em Up was a game I created for Big mode's 2023 game jam, and even today I would still say its one of my more impressive projects to date. The theme of the game was Mode so my idea was a tower defense game with a single tower that could switch through multiple modes of defense
 </p>
   </div>
-<div class="fade-in">
-<p style="font-size:20px"> 
-I started to improve my programming skills after going to SUNY Oneonta and taking some classes there, such as Data Structure, Algebra III, and Object Oriented Programming. I left for SUNY Polytechnic to pursue more game design opportunities. I was able to get a game design minor, join a game design club featuring like minded students, and even go to GDC which was a very cool experience for someone my age. Right now I'm currently working towards a masters at Binghamton University while looking for a more permanent job.
-</p>
-</div>
 <div style="background-color:light-blue">
 <div class="fade-in">
 
 <h2>Games</h2>
 <p style="font-size:20px"> 
+
 In my free time i enjoy making my own video games using Unity, Godot, Unreal Engine, C#, C++ , Java, Python and so on, and publishing them on itch.io to compete in game jams or grow my own skills. I'm always experimenting with new genres and technology, in order to best set myself up with anything I may need in the future. I was even able to work in a group with some of them which was really great. You can see a "best of" on my website <a href="https://joshuaklot.github.io/games/">here</a> or click the link at the bottom to go straight to my itch.io page.
 </p>
 </div>
