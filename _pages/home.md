@@ -1,4 +1,4 @@
-
+---
 title: "Joshua Klotzkin Home Page"
 layout: textlay
 excerpt: "Joshua Klotzkin's Website homepage"
