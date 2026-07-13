@@ -17,12 +17,12 @@ Robo Beat em Up was a game I created for Big mode's 2023 game jam, and even toda
 <div style="background-color:light-blue;margin-top:60px">
 <div class="fade-in">
 <p style="font-size:20px"> 
-<img src="images/worldbuilding.png" alt="worldbuilding" style=""float:left;width:20%;height:20%;margin-right:10px;"">
-This game was greatly inspired by Plants vs Zombies, with again the idea being the player has access to a single plant the can change its weapons at will. I was really inspired by that games humor with its enemy descriptions and attempted to do that with my own how to screen. The game also has a Vampire Survivor-esque progession system  where defeating enemies allows you to level up one of your equipped weapons.
-  <img src="images/action.png" alt="action" style="float:right;width:20%;height:20%;margin-left:10px;">
+<img src="images/worldbuilding.png" alt="worldbuilding" style=""float:left;width:20%;height:20%;margin-right:10px;">
+This game was greatly inspired by Plants vs Zombies, with again the idea being the player has access to a single plant the can change its weapons at will. I was really inspired by that games humor with its enemy descriptions and attempted to do that with my own how to screen. <img src="images/action.png" alt="action" style="float:right;width:20%;height:20%;margin-left:10px;">The game also has a Vampire Survivor-esque progession system  where defeating enemies allows you to level up one of your equipped weapons.
+  
 
 </p>
-<div style="text-align:center;">
+<div style="text-align:center;margin-top:60px">
 <iframe frameborder="0" src="https://itch.io/embed/2466230?bg_color=949494&amp;fg_color=640000&amp;link_color=c90000&amp;border_color=000000" width="750" height="167"><a href="https://juklok.itch.io/robo-beatemup-20">Play It Now!!</a></iframe>
 </div>
 </div>
