@@ -1,4 +1,4 @@
-<img width="1917" height="1066" alt="image" src="https://github.com/user-attachments/assets/26d63ad4-c4d5-4c3d-9566-16444ebe8fb3" />---
+
 title: "Joshua Klotzkin Home Page"
 layout: textlay
 excerpt: "Joshua Klotzkin's Website homepage"
@@ -18,10 +18,11 @@ Robo Beat em Up was a game I created for Big mode's 2023 game jam, and even toda
 <div style="background-color:light-blue">
 <div class="fade-in">
 
-<h2>Games</h2>
 <p style="font-size:20px"> 
-
-In my free time i enjoy making my own video games using Unity, Godot, Unreal Engine, C#, C++ , Java, Python and so on, and publishing them on itch.io to compete in game jams or grow my own skills. I'm always experimenting with new genres and technology, in order to best set myself up with anything I may need in the future. I was even able to work in a group with some of them which was really great. You can see a "best of" on my website <a href="https://joshuaklot.github.io/games/">here</a> or click the link at the bottom to go straight to my itch.io page.
+<img src="images/worldbuilding.png" alt="worldbuilding" style="float:right;width:50%;height:50%;">
+This game was greatly inspired by Plants vs Zombies, with again the idea being the player has access to a single plant the can change its weapons at will. I was really inspired by that games humor with its enemy descriptions and attempted to do that with my own how to screen. The game also has a Vampire Survivor-esque progession system  where defeating enemies allows you to level up one of your equipped weapons.
+  <img src="images/action.png" alt="action" style="float:right;width:50%;height:50%;">
+    
 </p>
 </div>
 </div>
