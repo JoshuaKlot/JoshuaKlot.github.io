@@ -22,7 +22,9 @@ This game was greatly inspired by Plants vs Zombies, with again the idea being t
   <img src="images/action.png" alt="action" style="float:right;width:20%;height:20%;">
 
 </p>
+<div style="display:block;margin:0 auto;">
 <iframe frameborder="0" src="https://itch.io/embed/2466230?bg_color=949494&amp;fg_color=640000&amp;link_color=c90000&amp;border_color=000000" width="750" height="167"><a href="https://juklok.itch.io/robo-beatemup-20">Play It Now!!</a></iframe>
+</div>
 </div>
 </div>
 </body> 
