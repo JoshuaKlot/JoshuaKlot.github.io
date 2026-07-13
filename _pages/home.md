@@ -28,10 +28,6 @@ This game was greatly inspired by Plants vs Zombies, with again the idea being t
 </div>
 </div>
 
-<div class="fade-in">
-<h2>Projects</h2>
-<p style="font-size:20px">I've also worked on my fair share of non gaming, programming related projects, such as making these websites for other people (and myself), using machine learning to detect faces on a raspberry pi, and making an edge detection GUI. Those projects can also be viewed <a href="https://joshuaklot.github.io/projects">here.</a></p> 
-</div>
 </body>
 <style>
   .fade-in {
