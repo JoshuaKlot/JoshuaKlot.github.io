@@ -6,27 +6,26 @@ sitemap: false
 permalink: /
 ---
 
-
 <body>
   <div class="fade-in">
-    <h1>This Weeks Featured Game</h1>
-    <img src="images/titleScreen.png" alt="titleScreen" style="display:block;margin:0 auto;width:50%;">
-    <p style="font-size:20px">
-      Robo Beat em Up was a game I created for Big mode's 2023 game jam, and even today I would still say its one of my more impressive projects to date. The theme of the game was Mode so my idea was a tower defense game with a single tower that could switch through multiple modes of defense
-    </p>
+<h1>This Weeks Featured Game</h1>
+<p style="font-size:20px">
+  <img src="images/titleScreen.png" alt="titleScreen" style="float:right;width:50%;height:50%;">
+Robo Beat em Up was a game I created for Big mode's 2023 game jam, and even today I would still say its one of my more impressive projects to date. The theme of the game was Mode so my idea was a tower defense game with a single tower that could switch through multiple modes of defense
+</p>
   </div>
+<div style="background-color:light-blue">
+<div class="fade-in">
+<p style="font-size:20px"> 
+<img src="images/worldbuilding.png" alt="worldbuilding" style="float:right;width:20%;height:20%;">
+This game was greatly inspired by Plants vs Zombies, with again the idea being the player has access to a single plant the can change its weapons at will. I was really inspired by that games humor with its enemy descriptions and attempted to do that with my own how to screen. The game also has a Vampire Survivor-esque progession system  where defeating enemies allows you to level up one of your equipped weapons.
+  <img src="images/action.png" alt="action" style="float:right;width:20%;height:20%;">
 
-  <div style="background-color:light-blue; margin-top:60px;">
-    <div class="fade-in">
-      <p style="font-size:20px"> 
-        <img src="images/worldbuilding.png" alt="worldbuilding" style="float:right;width:20%;height:20%;">
-        This game was greatly inspired by Plants vs Zombies, with again the idea being the player has access to a single plant the can change its weapons at will. I was really inspired by that games humor with its enemy descriptions and attempted to do that with my own how to screen. The game also has a Vampire Survivor-esque progession system  where defeating enemies allows you to level up one of your equipped weapons.
-        <img src="images/action.png" alt="action" style="float:right;width:20%;height:20%;">
-      </p>
-      <iframe frameborder="0" src="https://itch.io/embed/2466230?bg_color=949494&amp;fg_color=640000&amp;link_color=c90000&amp;border_color=000000" width="750" height="167"><a href="https://juklok.itch.io/robo-beatemup-20">Play It Now!!</a></iframe>
-    </div>
-  </div>
-</body>
+</p>
+<iframe frameborder="0" src="https://itch.io/embed/2466230?bg_color=949494&amp;fg_color=640000&amp;link_color=c90000&amp;border_color=000000" width="750" height="167"><a href="https://juklok.itch.io/robo-beatemup-20">Play It Now!!</a></iframe>
+</div>
+</div>
+</body> 
 <style>
   .fade-in {
     transform: translateX(200px);
