@@ -8,7 +8,7 @@ permalink: /
 
 <body>
   <div class="fade-in">
-<h1 style="display:block;margin:0 auto;margin-bottom:60px">This Weeks Featured Game</h1>
+<h1 style="text-align:center;margin-bottom:60px">This Weeks Featured Game</h1>
 <p style="font-size:20px">
   <img src="images/titleScreen.png" alt="titleScreen" style="display:block;margin:0 auto;width:50%;height:50%;">
 Robo Beat em Up was a game I created for Big mode's 2023 game jam, and even today I would still say its one of my more impressive projects to date. The theme of the game was Mode so my idea was a tower defense game with a single tower that could switch through multiple modes of defense
@@ -17,7 +17,7 @@ Robo Beat em Up was a game I created for Big mode's 2023 game jam, and even toda
 <div style="background-color:light-blue;margin-top:60px">
 <div class="fade-in">
 <p style="font-size:20px"> 
-<img src="images/worldbuilding.png" alt="worldbuilding" style=""float:left;width:20%;height:20%;margin-right:10px;">
+<img src="images/worldbuilding.png" alt="worldbuilding" style="float:left;width:20%;height:20%;margin-right:10px;">
 This game was greatly inspired by Plants vs Zombies, with again the idea being the player has access to a single plant the can change its weapons at will. I was really inspired by that games humor with its enemy descriptions and attempted to do that with my own how to screen. <img src="images/action.png" alt="action" style="float:right;width:20%;height:20%;margin-left:10px;">The game also has a Vampire Survivor-esque progession system  where defeating enemies allows you to level up one of your equipped weapons.
   
 
